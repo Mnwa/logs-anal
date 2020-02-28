@@ -1,11 +1,11 @@
-#Simple and fast logs analytics utils
+#Simple and fast logs analysis utils
 ## Usage
 
 Help
 ```bash
 logs-anal -h                                                                              ✔  19:15:15  
 
-#Logs Analytics Tool 0.1.0
+#Logs Analysis Tool 0.1.0
 #Mnwa
 #Analyze logs with comfort
 #
