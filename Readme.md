@@ -2,7 +2,7 @@
 ##Install
 With cargo:
 ```bash
-cargo install --path . --force
+cargo install --git https://github.com/Mnwa/logs-anal --force
 ```
 
 ## Usage
