@@ -68,7 +68,7 @@ fn main() {
     let path_wrapped = value_t!(matches.value_of("INPUT"), String);
 
     let stdin: Box<dyn BufRead> = match path_wrapped {
-        Ok(path) => Box::new(BufReader::new(File::open(path).unwrap())),
+        Ok(path) => Box::new(BufReader::new(File::open(path).expect("File not exists"))),
         Err(_) => Box::new(BufReader::new(std::io::stdin())),
     };
 
@@ -85,23 +85,23 @@ fn main() {
         "head" => head(
             stdin,
             stdout_locked,
-            matches
-                .value_of("lines")
-                .map_or(0, |count| usize::from_str(count).unwrap()),
+            matches.value_of("lines").map_or(0, |count| {
+                usize::from_str(count).expect("lines must be a number")
+            }),
         ),
         "skip" => skip(
             stdin,
             stdout_locked,
-            matches
-                .value_of("lines")
-                .map_or(0, |count| usize::from_str(count).unwrap()),
+            matches.value_of("lines").map_or(0, |count| {
+                usize::from_str(count).expect("lines must be a number")
+            }),
         ),
         "tail" => tail(
             stdin,
             stdout_locked,
-            matches
-                .value_of("lines")
-                .map_or(0, |count| usize::from_str(count).unwrap()),
+            matches.value_of("lines").map_or(0, |count| {
+                usize::from_str(count).expect("lines must be a number")
+            }),
         ),
         "uniq" => uniq(stdin, stdout_locked),
         "wc" => wc(stdin, stdout_locked),
