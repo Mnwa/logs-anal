@@ -1,9 +1,14 @@
 #Simple and fast logs analysis utils
+##Install
+With cargo:
+```bash
+cargo install --path . --force
+```
+
 ## Usage
 
-Help
 ```bash
-logs-anal -h                                                                              ✔  19:15:15  
+logs-anal -h
 
 #Logs Analysis Tool 0.1.0
 #Mnwa
@@ -29,11 +34,11 @@ logs-anal -h                                                                    
 
 ## Usage example
 ```bash
-echo "Joe   56789                                                                                                    ✔  19:20:23  
+echo "Joe   56789
 Sam   45678
 Wendy 23456
 Adam  12345
-Bob   34567" | target/release/logs-anal -c sort -k 1 zipcode
+Bob   34567" | logs-anal -c sort -k 1
 
 # Adam  12345
 # Bob   34567
