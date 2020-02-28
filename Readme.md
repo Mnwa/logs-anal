@@ -1,5 +1,5 @@
-#Simple and fast logs analysis utils
-##Install
+# Simple and fast logs analysis utils
+## Install
 With cargo:
 ```bash
 cargo install --git https://github.com/Mnwa/logs-anal --force
