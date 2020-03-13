@@ -1,8 +1,16 @@
 [package]
 name = "logs-anal"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Mnwa <mihan@panfilov.biz>"]
 edition = "2018"
+description = "Command line logs analytics tool."
+license="MIT"
+keywords = ["logs", "analytics", "parser", "logs analyze"]
+categories = ["command-line-utilities"]
+readme = "Readme.md"
+documentation = "https://mnwa.github.io/logs-anal/"
+homepage = "https://mnwa.github.io/logs-anal/"
+repository = "https://github.com/Mnwa/logs-anal"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

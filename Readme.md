@@ -14,7 +14,7 @@ cargo install logs-anal
 ```bash
 logs-anal -h
 
-#Logs Analysis Tool 0.1.0
+#Logs Analysis Tool 0.1.1
 #Mnwa
 #Analyze logs with comfort
 #

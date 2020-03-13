@@ -8,7 +8,7 @@ use std::str::FromStr;
 
 fn main() {
     let matches = App::new("Logs Analytics Tool")
-        .version("0.1.0")
+        .version("0.1.1")
         .author("Mnwa")
         .about("Analyze logs with comfort")
         .arg(
