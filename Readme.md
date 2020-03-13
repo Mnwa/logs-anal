@@ -1,8 +1,12 @@
 # Simple and fast logs analysis utils
-## Install
-With cargo:
+[![](https://docs.rs/logs-anal/badge.svg)](https://docs.rs/logs-anal/)
+![Rust](https://github.com/Mnwa/logs-anal/workflows/Build/badge.svg?branch=master)
+[![](https://img.shields.io/crates/v/logs-anal.svg)](https://crates.io/crates/logs-anal)
+[![](https://img.shields.io/crates/d/logs-anal.svg)](https://crates.io/crates/logs-anal)
+
+## Installing with cargo
 ```bash
-cargo install --git https://github.com/Mnwa/logs-anal --force
+cargo install logs-anal
 ```
 
 ## Usage
